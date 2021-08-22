@@ -32,6 +32,10 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -45,7 +49,7 @@
           <a class="btn btn-secondary" href="#">Try it Free</a>
         </nav>
         <div class="hero-container">
-          <div class="hero__texts">
+          <div data-aos="zoom-out-right" class="hero__texts">
             <h1 class="text-heading-1">
               Build The Community Your Fans Will Love
             </h1>
@@ -56,7 +60,7 @@
             </p>
             <a class="btn btn-primary" href="#">Get Started For Free</a>
           </div>
-          <div class="hero__image">
+          <div data-aos="zoom-in" class="hero__image">
             <img src="images/illustration-mockups.svg" alt="" />
           </div>
         </div>
@@ -64,7 +68,12 @@
     </header>
     <main>
       <div class="container">
-        <article class="card">
+        <article
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="600"
+          class="card"
+        >
           <div class="card__image card__image--1"></div>
           <div class="card__texts">
             <h2 class="text-heading-2">Grow Together</h2>
@@ -75,7 +84,7 @@
             </p>
           </div>
         </article>
-        <article class="card">
+        <article data-aos="fade-left" data-aos-duration="1000" class="card">
           <div class="card__image card__image--2"></div>
           <div class="card__texts">
             <h2 class="text-heading-2">Flowing Conversations</h2>
@@ -86,7 +95,7 @@
             </p>
           </div>
         </article>
-        <article class="card">
+        <article data-aos="fade-right" data-aos-duration="1000" class="card">
           <div class="card__image card__image--3"></div>
           <div class="card__texts">
             <h2 class="text-heading-2">Your Users</h2>
@@ -97,7 +106,7 @@
             </p>
           </div>
         </article>
-        <div class="card-box">
+        <div data-aos="fade-up" data-aos-duration="1000" class="card-box">
           <h3 class="text-heading-3">Ready To Build Your Community?</h3>
           <a class="btn btn-primary" href="#">Get Started For Free</a>
         </div>
@@ -172,5 +181,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
