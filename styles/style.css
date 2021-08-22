@@ -1,12 +1,3 @@
-/* My Notes =>  
-- Mobile: 375px
-- Desktop: 1440px
-
-font: 18px
-
-heading: poppins 600
-body: opensans 400,700
-*/
 :root {
   --pink: hsl(322, 100%, 66%);
   --very-pale-cyan: hsl(193, 100%, 96%);
@@ -67,6 +58,7 @@ body {
 
 @media (min-width: 900px) {
   .text-heading-2 {
+    font-size: 3.4rem;
     text-align: left;
   }
 }
@@ -81,7 +73,7 @@ body {
 
 .text-paragraph {
   font-size: 1.7rem;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -112,9 +104,22 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
 .container {
   width: 87.5%;
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -169,13 +174,16 @@ a {
   color: var(--grayish-blue);
 }
 
-img {
-  max-width: 100%;
-}
-
 header {
   background: #eefbfe url(../images/bg-hero-mobile.svg) no-repeat center;
   background-size: cover;
+}
+
+@media (min-width: 900px) {
+  header {
+    background: #eefbfe url(../images/bg-hero-desktop.svg) no-repeat center;
+    background-size: cover;
+  }
 }
 
 nav {
@@ -188,17 +196,16 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
 }
 
 nav .logo-container {
   width: 50%;
-  max-width: 180px;
+  max-width: 200px;
 }
 
 nav .logo-container .nav-logo {
   width: 100%;
-  max-width: 200px;
 }
 
 .hero-container {
@@ -389,11 +396,12 @@ main .container {
 
 footer {
   background-color: #0f2932;
-  color: #fff;
-  padding: 9rem 0 4rem;
+  color: #deeeed;
+  padding: 12rem 0 4rem;
 }
 
 footer .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,6 +409,117 @@ footer .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
+}
+
+@media (min-width: 900px) {
+  footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container > * {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+footer .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.75rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-logo h2 {
+  color: #fff !important;
+  font-size: 2.75rem;
+}
+
+footer .footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+footer .footer__col .col__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__col .col__item svg {
+  -ms-flex-preferred-size: 4.5rem;
+      flex-basis: 4.5rem;
+}
+
+footer .footer__col .col__item p {
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-icons > .fab {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #def6f8;
+  border-radius: 50%;
+}
+
+footer .social-icons > .fab:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+footer .copyright {
+  font-size: 1.35rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #81969a;
+}
+
+@media (min-width: 900px) {
+  footer .copyright {
+    position: absolute;
+    margin-top: 0;
+    right: 7rem;
+    bottom: -2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
