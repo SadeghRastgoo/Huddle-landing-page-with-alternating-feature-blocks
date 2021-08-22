@@ -1,0 +1,42 @@
+/* My Notes =>  
+- Mobile: 375px
+- Desktop: 1440px
+
+font: 18px
+
+heading: poppins 600
+body: opensans 400,700
+*/
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
